@@ -32,7 +32,7 @@ class ChatListAdapter(
 
         override fun bind(item: Chat, position: Int) = with(binding) {
 
-            chatName.text = item.userName
+            chatName.text = item.userTwo
             chatImage.setImageResource(item.userImage)
 
             chatParent.setOnClickListener { onChatClick.invoke(item) }

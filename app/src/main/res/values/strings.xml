@@ -11,4 +11,5 @@
     <string name="empty_chats">No tienes chats para mostrar</string>
     <string name="online">online</string>
     <string name="chat__message_hint">Escribe un mensaje</string>
+    <string name="chat__empty_messages">No hay mensajes para mostrar</string>
 </resources>

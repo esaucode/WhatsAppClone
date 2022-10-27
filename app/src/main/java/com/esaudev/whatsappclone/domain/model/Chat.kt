@@ -4,6 +4,9 @@ import androidx.annotation.DrawableRes
 
 data class Chat(
     @DrawableRes val userImage: Int,
-    val userName: String,
-    val id: String
+    val id: String,
+    val userOneId: String,
+    val userTwoId: String,
+    val userOne: String,
+    val userTwo: String
 )

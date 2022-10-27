@@ -8,6 +8,29 @@
     android:animateLayoutChanges="true"
     android:background="@color/white_chocolate">
 
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pbMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEmptyMessages"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chat__empty_messages"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/chatToolbar"
         android:layout_width="0dp"
@@ -79,7 +102,7 @@
         app:reverseLayout="true"
         android:paddingVertical="16dp"
         android:clipToPadding="false"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/messageComponent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

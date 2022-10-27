@@ -10,7 +10,9 @@ import com.esaudev.whatsappclone.R
 import com.esaudev.whatsappclone.databinding.FragmentChatsBinding
 import com.esaudev.whatsappclone.databinding.FragmentDashboardBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
@@ -33,7 +35,7 @@ class DashboardFragment : Fragment() {
 
     private fun setupViewPager() {
         binding.dashboardViewPager.apply {
-            adapter = DashboardPagerAdapter(this@DashboardFragment)
+            adapter = DashboardPagerAdapter(this@DashboardFragment, userId = args.userId)
         }
 
         TabLayoutMediator(binding.dashboardTabLayout, binding.dashboardViewPager) { tab, position ->

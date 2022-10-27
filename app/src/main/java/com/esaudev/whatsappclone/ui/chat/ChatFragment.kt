@@ -130,6 +130,7 @@ class ChatFragment : Fragment() {
     }
 
     private fun handleSendMessage() {
+        hideKeyboard()
         viewModel.sendMessage(
             Message(
                 chatId = args.chatId,

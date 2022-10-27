@@ -95,8 +95,7 @@ class ChatFragment : Fragment() {
         viewModel.sendMessageState.observe(viewLifecycleOwner) { state ->
             when(state) {
                 is Resource.Success -> clearMessage()
-                is Resource.Error -> Toast.makeText(requireContext(), state.message, Toast.LENGTH_SHORT)
-                    .show()
+                is Resource.Error -> clearMessage()
                 else -> Unit
             }
         }

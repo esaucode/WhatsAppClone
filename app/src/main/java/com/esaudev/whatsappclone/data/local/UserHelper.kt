@@ -1,6 +1,7 @@
 package com.esaudev.whatsappclone.data.local
 
 import com.esaudev.whatsappclone.R
+import com.esaudev.whatsappclone.domain.model.Chat
 import com.esaudev.whatsappclone.domain.model.User
 
 object UserHelper {
@@ -25,6 +26,29 @@ object UserHelper {
             id = "4",
             image = R.drawable.asset_neymar,
             name = "Neymar Jr"
+        ),
+    )
+
+    val chatList = listOf(
+        Chat(
+            id = "1",
+            userImage = R.drawable.asset_cr7,
+            userName = "Cristiano Ronaldo"
+        ),
+        Chat(
+            id = "2",
+            userImage = R.drawable.asset_messi,
+            userName = "Lionel Messi"
+        ),
+        Chat(
+            id = "3",
+            userImage = R.drawable.asset_lewandowski,
+            userName = "Robert Lewandowski"
+        ),
+        Chat(
+            id = "4",
+            userImage = R.drawable.asset_neymar,
+            userName = "Neymar Jr"
         ),
     )
 
